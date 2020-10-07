@@ -1,5 +1,4 @@
 name: Pages Pipeline
-
 on:
   push:
     branches: [service]
@@ -35,7 +34,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: ${{ secrets.DOCKER_USERNAME }}/pages
-          tags: service
+          tags: monitor
   deploy-to-cluster:
     needs: build-artifact
     runs-on: ubuntu-latest
