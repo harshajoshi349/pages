@@ -20,7 +20,7 @@ spec:
         tier: service
     spec:
       containers:
-        - image: harsha1098/pages:monitor
+        - image: harsha1098/pages:distributed
           imagePullPolicy: Always
           name: pages
           ports:
